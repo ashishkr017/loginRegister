@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <style>
+        body{
+            background-color: rgb(255, 252, 252);
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .logout{
+            padding: 2%;
+            margin-bottom: 10%;
+        }
+        .update{
+            padding: 3%;
+            
+        }
+        .Delete{
+            padding: 2%;
+           
+        }
+    </style> 
+</head>
+<body>
+    <center><h1>welcome to home page</h1></center>
+    <center>
+    <div class="logout">
+    <form action="http://127.0.0.1:8000/">
+        <input type="submit" value="Logout" />  
+    </form>
+</div>
+   
+    <div class="update">
+    <form action="http://127.0.0.1:8000/update">
+        <input type="submit" value="Update" />  
+    </form>
+</div>
+
+<div class="Delete">
+    <form action="http://127.0.0.1:8000/delete">
+        <input type="submit" value="Delete" />  
+    </form>
+</div>
+    <!-- Update your password<a href="http://127.0.0.1:8000/update">Update</a>
+    Delete your account<a href="http://127.0.0.1:8000/delete">Delete</a> -->
+    
+</center>
+       
+
+
+
+
+</body>
+</html>

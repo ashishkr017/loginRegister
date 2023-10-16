@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delete</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: white;
+        }
+        button{
+            background-color: #000000;
+            width: 25%;
+            padding: 15px;
+            color: rgb(220, 220, 220);
+            border: none;
+            float: center;
+            font-size: 15px;
+        }
+        input[type=email],input[type=password]{
+            width: 50%;
+            font-size: 15px;
+            margin: 8px 0px;
+            padding: 12px 20px;
+            display: inline-block;
+            border: 2px solid rgb(3, 4, 3);
+            box-sizing: border-box;
+        }
+        .container{
+            padding: 50px;
+            background-color: white;
+        }
+    </style>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center><h1>Delete</h1></center>
+        <form action="#" method="post">
+            {% csrf_token %}
+            {% load static %} 
+            <center><div class="container">
+                <!-- <div class="imgcontainer">
+                    <img src="" alt="Avatar" class="avatar">
+                </div> -->
+                <label for ='email'><b>UserEmail :  </b></label>
+                <input type="email" placeholder="Enter email" name="email" float="right"  required><br>  
+                <!-- <label for='password'><b>Password : </b></label>
+                <input type="password" placeholder="Enter Password" name="password" required><br>   -->
+                <label for='password'><b>Password : </b></label>
+                <input type="password" placeholder="Enter Password for delete your account" name="password" required><br>  
+                <button type="submit"><b>Delete</b></button><br>     
+                
+            </div></center>
+        </form>
+
+</body>
+</html>
+</body>
+</html>
